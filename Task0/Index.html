@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Указание кодировки документа -->
+	<meta charset="UTF-8">
+    <title>Task</title>
+    <!-- Подключение CSS-файла style.css-->
+   	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+<body>
+    <!-- Ссылка на скрипты во внешнем файле Task.js -->
+    <script src="js/Task.js"></script>
+    <div id="login">
+        <!-- Передачи пользовательских данных на абсолютный URL — http://foo.com, метод передачи данных GET,
+        событие onsubmit возникает при отправки формы и отвечает за валидацию данных-->
+        <form action="http://foo.com" name="form" onsubmit="return validate()">
+            <span class="clearfix">
+                <p><span class="fontawesome-name"></span><input type="text" name="name" id="namef" value="Имя"></p> 
+                <p><span class="fontawesome-user"></span><input type="text" name="user" id="userf" value="Логин"></p> 
+                <p><span class="fontawesome-lock"></span><input type="password" name="lock" id="lockf" value="Пароль"></p>
+                <!-- Кнопка для отправки данных формы на сервер, событие onclick требуется для преобразование данных формы в JSON-->
+                <p><input type="submit" value="Регистрация" onclick="submitform()"></p>
+            </span>
+        </form>
+        </div>
+</body>
+</html>

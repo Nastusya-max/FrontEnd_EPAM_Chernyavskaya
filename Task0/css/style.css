@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+	background-color: #2c3338;
+	color: #606468;
+	font-size: 14px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input {
+	border: none;
+	font-size: 14px;
+}
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+#login {
+	margin: 150px auto;
+	width: 280px;
+}
+
+#login form input {
+	height: 50px;
+	outline:none;
+}
+
+#login form input[type="text"], input[type="password"] {
+	background-color: #3b4148;
+	color: #606468;
+	padding: 0 16px;
+	width: 248px;
+}
+
+#login form input:focus {
+	color:#fff;
+}
+
+#login form input[type="submit"] {
+	background-color: #77ced9;
+	color: #eee;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #7cbcc7;
+}
