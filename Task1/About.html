@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <li><img class="logo" src="sourse/logo/lips.png" alt="logo"/></li>
+            <li><p>Favre's art-typography</p></li>
+        </header>
+        <nav>
+            <ul class="left-menu">
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Table.html">TABLE</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <blockquote>
+                <div class="text_content">
+                        <p><br></p>
+                        <p>Выполнила Чернявская Агастаися Ссылка на 
+                            <a href="https://github.com/Nastusya-max/FrontEnd_EPAM_Chernyavskaya-.git">репозиторий</a></p>
+                    </div>
+                <div id="login">
+                <form action="http://foo.com" name="form" onsubmit="return validate()">
+                    <span class="clearfix">
+                        <p><span class="fontawesome-name"></span><input type="text" name="name" id="namef" value="Имя"></p> 
+                        <p><span class="fontawesome-user"></span><input type="text" name="user" id="userf" value="Логин"></p> 
+                        <p><span class="fontawesome-text"></span><input type="text" name="lock" id="lockf" value="Сообщение"></p>
+                        <!-- Кнопка для отправки данных формы на сервер, событие onclick требуется для преобразование данных формы в JSON-->
+                        <p><input type="submit" value="Отправить" onclick="submitform()"></p>
+                    </span>
+                </form>
+                </div>
+                </blockquote>
+        </aside>
+    </div>
+    <footer>
+    <div id="footer">
+        <div class="wrap_footer">
+            <div class="footer_block">Favre's art-typography 2020©</div>
+            <div class="footer_block" id="current_date_time_block"></div>
+                <script type="text/javascript">  
+                /* функция добавления ведущих нулей */
+                /* (если число меньше десяти, перед числом добавляем ноль) */
+                function zero_first_format(value)
+                {
+                    if (value < 10)
+                    {
+                        value='0'+value;
+                    }
+                    return value;
+                }
+                /* функция получения текущей даты и времени */
+                function date_time()
+                {
+                    var current_datetime = new Date();
+                    var day = zero_first_format(current_datetime.getDate());
+                    var month = zero_first_format(current_datetime.getMonth()+1);
+                    var year = current_datetime.getFullYear();
+                    return "Текущая дата: " + day+"."+month+"."+year;
+                }
+                /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+                document.getElementById('current_date_time_block').innerHTML = date_time();
+                </script>
+            <div class="footer_block">Чернявская Анастасия. Ссылка на 
+                <a href="https://github.com/Nastusya-max/FrontEnd_EPAM_Chernyavskaya-.git">репозиторий</a>
+            </div> 
+	</div>
+    </footer>    
+</body>
+</html>

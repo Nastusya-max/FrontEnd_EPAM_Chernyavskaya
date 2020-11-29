@@ -89,6 +89,10 @@ blockquote {
   text-align: justify;
 }
 
+.text_content p a{
+  color: black;
+}
+
 wrap {
   width: 1310px;/*фиксируем ширину обертки*/
   margin: 0 auto;/*центрируем ее*/
@@ -151,3 +155,79 @@ wrap_footer {
 .footer_block a{
   color: rgb(255, 255, 255);
 }
+
+/* таблица */
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: #c4e3fc;
+  color: #656665;
+  border: 6px solid #84ade2;
+  /* border-radius: 20px; */
+  }
+  th { 
+  font-size: 18px;
+  padding: 10px;
+  }
+  td {
+  /* background-color: #F5D7BF; */
+  padding: 10px;
+  }
+
+  /* обр связь */
+
+
+a:hover {
+  text-decoration: underline;
+  font-family: Nekst-regular;
+}
+
+input {
+  border: none;
+  font-family: Nekst-regular;
+	font-size: 14px;
+}
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+#login {
+	margin: 150px auto;
+	width: 280px;
+}
+
+#login form input {
+	height: 50px;
+	outline:none;
+}
+
+#login form input[type="text"], input[type="password"] {
+	background-color: #77ba96;
+	color: #1b4a30;
+	padding: 0 16px;
+	width: 248px;
+}
+
+#login form input:focus {
+	color:#fff;
+}
+
+#login form input[type="submit"] {
+	background-color:#373e75;
+	color: #eee;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #7cbcc7;
+}
+
