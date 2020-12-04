@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Указание кодировки документа -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Task01</title>
+    <!-- Подключение CSS-файла style.css-->
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
 </head>
+
 <body>
+    <!-- Оболочка для всего контента body -->
     <div id="wrapper">
         <header>
-            <li><img class="logo" src="sourse/logo/lips.png" alt="logo"/></li>
-            <li><p>Favre's art-typography</p></li>
+            <!-- Список с названием и графическим элементом -->
+            <li><img class="logo" src="sourse/logo/lips.png" alt="logo" /></li>
+            <li>
+                <p>Favre's art-typography</p>
+            </li>
         </header>
         <nav>
+            <!-- Контейнер меню -->
             <ul class="left-menu">
+                <!-- Список для меню с ссылками на страницы -->
                 <li><a href="Index.html">HOME</a></li>
                 <li><a href="Table.html">TABLE</a></li>
                 <li><a href="About.html">ABOUT</a></li>
             </ul>
         </nav>
         <aside>
+            <!-- контент страницы -->
             <blockquote>
-                <table id ="myTable" align="center">
-                    <tr>
+                <!-- Текстовый контент, описание таблицы -->
+                <div class="table_text">
+                    <p>
+                        Мы предлагаем широкий спектр услуг таких, как печать обложек, визиток, логотипов, выставка своих
+                        работ и просмотр галереи работ наших дизайнеров. Вы можете сделать разовый заказ,
+                        однако, в случае, если вы нацелены на долговременное сотрудничество, наша студия предлогает
+                        оформить подписку на определённый пакет работ. Цена пакета
+                        варируется от входящий в него услуг. Мы предлогаем пакеты: "Стандарт", "Базовый", "Премиум",
+                        "VIP". Цена кажжого пакета варируется от предоставляемых услуг и подробно указана в таблице ниже
+                        ↓
+                    </p>
+                    <p>
+                        Вы можете также выбрать стиль таблицы из уже заготовленых, а также подобрать шрифт
+                        самостоятельно:
+                    </p>
+                </div>
+                <p><br></p>
+                <!-- Создание таблицы -->
+                <table id="myTable" align="center">
+                    <tr align="center">
                         <th>Услуга</th>
                         <th>Стандарт</th>
                         <th>Базовый</th>
                         <th>Премимум</th>
                         <th>VIP</th>
-                        </tr>
-                        <tr>
+                    </tr>
+                    <tr align="center">
                         <td>Визитка</td>
                         <td>15р.</td>
                         <td>25р.</td>
                         <td>30р.</td>
                         <td>40р.</td>
-                        </tr>
-                        <tr>
+                    </tr>
+                    <tr align="center">
                         <td>Логотип</td>
                         <td>25р.</td>
                         <td>35р.</td>
                         <td>40р.</td>
                         <td>50р.</td>
-                        </tr>
-                        <tr>
+                    </tr>
+                    <tr align="center">
                         <td>Обложка</td>
                         <td>30р.</td>
                         <td>40р.</td>
                         <td>45р.</td>
                         <td>55р.</td>
-                        </tr>
-                        <tr>
+                    </tr>
+                    <tr align="center">
                         <td>Печать</td>
                         <td>10р.</td>
                         <td>15р.</td>
@@ -58,69 +87,87 @@
                         <td>25р.</td>
                     </tr>
                 </table>
-                <input id="inp" type="button" value="Стиль1">
-                <input id="inp2" type="button" value="Стиль2">
-               <p><br></p>
-                <form>
-                    <label for="email"><b>Шрифт</b></label>
-                    <input id="input-id" type="text" placeholder="Введите шрифт" name="email" required>
-                    <button type="submit" class="registerbtn">Изменить</button>
-                </form>
-                <script type="text/javascript">  
-                inp.onclick = function (){
-                    myTable.style['font-family'] = 'Nekst-Thin';
-                    myTable.style['background'] = '#62dcad';
-                    myTable.style['border'] = '6px solid #62dcad';
-                    myTable.style['background-color'] = '#bff5c8';
-                }
-                inp2.onclick = function (){
-                    myTable.style['font-family'] = 'Old Classic';
-                    myTable.style['background'] = '#62dcad';
-                    myTable.style['border'] = '6px solid #62dcad';
-                    myTable.style['background-color'] = '#bff5c8';
-                }
-                inp3.onclick = function (){
-                    var myInput = document.getElementById("input-id").value;
-                    myTable.style['font-family'] = myInput;
-                }
+                <!-- Обёртка для кнопок стилей -->
+                <div class="inp" align="center">
+                    <!-- Кнопки стилей -->
+                    <input class="inp_style" id="inp" type="button" value="Classic">
+                    <input class="inp_style" id="inp2" type="button" value="Modern">
+                    <input class="inp_style" id="inp3" type="button" value="Voge">
+                </div>
+
+                <p><br></p>
+                <!-- обёртка текстбокса для ввода названия шрифта -->
+                <div class="inp_font" align="center">
+                    <!-- текстбокс для ввода названия шрифта -->
+                    <input id="input-id" type="text" placeholder="Введите шрифт">
+                    <!-- Кнопка  submit для обновления-->
+                    <button id="inp4" class="inp_style" type="submit">Изменить</button>
+                </div>
+                <!-- Подключение js-кода для изменения стиля таблиц -->
+                <script type="text/javascript">
+                    // Функция изменения стиля на Classic
+                    inp.onclick = function () {
+                        myTable.style['font-family'] = 'Nekst-Regular';
+                        myTable.style['font-size'] = '18px';
+                        myTable.style['background'] = '#c4f4fc';
+                        myTable.style['border'] = '4px solid #7ebfa1';
+                    }
+                    // Функция изменения стиля на Modern
+                    inp2.onclick = function () {
+                        myTable.style['font-family'] = 'Comic Sans MS';
+                        myTable.style['font-size'] = '18px';
+                        myTable.style['background'] = '#c4e1fc';
+                        myTable.style['border'] = '4px solid #86d4e2';
+                    }
+                    // Функция изменения стиля на Voge
+                    inp3.onclick = function () {
+                        myTable.style['font-family'] = 'Old Classic';
+                        myTable.style['font-size'] = '22px';
+                        myTable.style['background'] = '#f5c4fc';
+                        myTable.style['border'] = '4px solid #c288ca';
+                    }
+                    // Функция изменения шрифта
+                    inp4.onclick = function () {
+                        let myInput = document.getElementById("input-id").value;
+                        myTable.style['font-family'] = myInput;
+                    }
                 </script>
-                    <div class="text_content">
-                    </div>
-                </blockquote>
+
+            </blockquote>
         </aside>
     </div>
     <footer>
-    <div id="footer">
-        <div class="wrap_footer">
-            <div class="footer_block">Favre's art-typography 2020©</div>
-            <div class="footer_block" id="current_date_time_block"></div>
-                <script type="text/javascript">  
-                /* функция добавления ведущих нулей */
-                /* (если число меньше десяти, перед числом добавляем ноль) */
-                function zero_first_format(value)
-                {
-                    if (value < 10)
-                    {
-                        value='0'+value;
+        <div id="footer">
+            <div class="wrap_footer">
+                <!-- Версия сайта -->
+                <div class="footer_block">Version №1 2020©</div>
+                <div class="footer_block" id="current_date_time_block"></div>
+                <script type="text/javascript">
+                    /* функция добавления ведущих нулей */
+                    /* (если число меньше десяти, перед числом добавляем ноль) */
+                    function zero_first_format(value) {
+                        if (value < 10) {
+                            value = '0' + value;
+                        }
+                        return value;
                     }
-                    return value;
-                }
-                /* функция получения текущей даты и времени */
-                function date_time()
-                {
-                    var current_datetime = new Date();
-                    var day = zero_first_format(current_datetime.getDate());
-                    var month = zero_first_format(current_datetime.getMonth()+1);
-                    var year = current_datetime.getFullYear();
-                    return "Текущая дата: " + day+"."+month+"."+year;
-                }
-                /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
-                document.getElementById('current_date_time_block').innerHTML = date_time();
+                    /* функция получения текущей даты и времени */
+                    function date_time() {
+                        var current_datetime = new Date();
+                        var day = zero_first_format(current_datetime.getDate());
+                        var month = zero_first_format(current_datetime.getMonth() + 1);
+                        var year = current_datetime.getFullYear();
+                        return "Текущая дата: " + day + "." + month + "." + year;
+                    }
+                    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+                    document.getElementById('current_date_time_block').innerHTML = date_time();
                 </script>
-            <div class="footer_block">Чернявская Анастасия. Ссылка на 
-                <a href="https://github.com/Nastusya-max/FrontEnd_EPAM_Chernyavskaya-.git">репозиторий</a>
-            </div> 
-	</div>
-    </footer>    
+                <!-- Информация об авторе -->
+                <div class="footer_block">Чернявская Анастасия. Ссылка на
+                    <a href="https://github.com/Nastusya-max/FrontEnd_EPAM_Chernyavskaya-.git">репозиторий</a>
+                </div>
+            </div>
+    </footer>
 </body>
+
 </html>
