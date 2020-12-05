@@ -35,7 +35,7 @@ nav {
   text-align: left;
 }
 
-left-menu li {
+menu li {
   display: inline-block;
   text-align: left;
   margin: 0;
@@ -59,7 +59,7 @@ nav li a {
 }
 
 /* контент */
-aside {
+main {
   float: inline-start;
   height: 590px;
   margin-top: -300px;
