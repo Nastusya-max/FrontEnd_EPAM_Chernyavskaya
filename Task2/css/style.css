@@ -1,0 +1,209 @@
+#wrapper {
+  max-width: 2060px;
+  margin: auto;
+}
+/* хедер */
+header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  vertical-align: top;
+  align-items: initial;
+}
+
+header li p {
+  text-transform: uppercase;
+  font-size: 12pt;
+  text-align: left;
+  font-family: Nekst-Medium;
+  margin-top: -10px;
+}
+
+img.logo {
+  margin-top: -10px;
+  margin-left: 10px;
+  width: 80%;
+}
+/* меню */
+nav {
+  width: 100px;
+  text-align: left;
+}
+
+left-menu li {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+
+nav ul {
+  padding-inline-start: 20px;
+  margin-top: 150px;
+}
+
+nav li {
+  list-style-type: none;
+  list-style-position: inside;
+  font: 12pt Nekst-Medium;
+  padding: 15px;
+}
+
+nav li a {
+  text-align: left;
+  color: black;
+}
+
+/* контент */
+aside {
+  float: inline-start;
+  height: 590px;
+  margin-top: -300px;
+  margin-left: 150px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.text_content {
+  font-size: 14pt;
+  font-family: Nekst-regular;
+}
+
+.table_text {
+  font-size: 14pt;
+  font-family: Nekst-regular;
+}
+
+.text_content p {
+  margin-top: 0px;
+  text-indent: 55px;
+  text-align: justify;
+}
+
+.table_text p {
+  text-indent: 55px;
+  text-align: justify;
+}
+
+.text_content p a {
+  color: black;
+}
+
+.bblock {
+  float: left; /*Задаем обтекание*/
+  line-height: 35px; /*Высота строки +  верт. центрирования текста*/
+  font-size: 20pt;
+  font-family: Old Classic;
+  color: rgb(0, 0, 0);
+  width: 306px; /*Фиксируем ширину блока*/
+  margin-right: 5px;
+  text-align: center; /*Центрируем текст по горизонтали*/
+}
+.wrap :last-child {
+  margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+/* footer */
+footer {
+  background: #141838;
+  color: #dbdbdb;
+  font-size: 11px;
+}
+
+#footer {
+  max-width: 1960px;
+  margin: auto;
+  height: 120px;
+}
+
+.footer_block {
+  margin-left: 30px;
+  margin-top: 80px;
+  float: left; /*Задаем обтекание*/
+  line-height: 10px; /*Высота строки +  верт. центрирования текста*/
+  font-size: 10pt;
+  font-family: Nekst-Thin;
+  color: rgb(255, 255, 255);
+  width: 340px; /*Фиксируем ширину блока*/
+  margin-right: 110px;
+  text-align: center; /*Центрируем текст по горизонтали*/
+}
+
+.footer_block :last-child {
+  margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+
+.footer_block a {
+  color: rgb(255, 255, 255);
+}
+/* таблица */
+table {
+  margin-top: -2%;
+  font-size: 18px;
+  font-family: "Nekst-Regular";
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 3px;
+  background: #c4f4fc;
+  color: #3b453b;
+  border: 4px solid #7ebfa1;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+}
+/* обр связь */
+#send_input {
+  border: 2px solid #5aa07a;
+  background: #ffffff;
+  color: #306136;
+  font-size: 18px;
+  font-family: Nekst-medium;
+}
+#send_input:focus {
+  outline: none;
+  font-family: Nekst-Regular;
+  background: #c4fcdb;
+}
+/* кнопки для изменения стиля таблицы */
+.inp {
+  margin-top: 1%;
+}
+
+.inp_font {
+  margin-top: -3%;
+}
+
+.inp_style {
+  border: 2px solid #5aa07a;
+  background: #ffffff;
+  width: 120px;
+  color: #306136;
+  font-size: 16px;
+  font-family: Nekst-medium;
+}
+
+.inp_style:focus {
+  outline: none;
+  border: 2px solid #4859a7;
+  background: #7779da;
+  color: #ffffff;
+}
+
+#input-id {
+  font-family: Nekst-Regular;
+}
+
+#input-id:focus {
+  outline: none;
+  font-family: Nekst-Regular;
+  background: #c4fcdb;
+}
