@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'Nekst-Medium'; /* Имя шрифта */
+  src: url('/sourse/fonts/Nekst-Medium.otf') format('opentype'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Nekst-Light'; /* Имя шрифта */
+  src: url('sourse/fonts/Nekst-Light.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Nekst-Bold'; /* Имя шрифта */
+  src: url('sourse/fonts/Nekst-Bold.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Nekst-Thin'; /* Имя шрифта */
+  src: url('sourse/fonts/Nekst-Thin.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Nekst-Regular'; /* Имя шрифта */
+  src: url('sourse/fonts/Nekst-Regular.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Old-Classic'; /* Имя шрифта */
+  src: url('sourse/fonts/Old-Classic.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Comic Sans MS'; /* Имя шрифта */
+  src: url('sourse/fonts/comic.ttf'); /* Путь к файлу со шрифтом */
+}
+
+#wrapper {
+  max-width: 100%;
+  margin: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* хедер */
+header {
+  /* padding: 20px 0; */
+  text-align: center;
+  height: 140px;
+}
+
+img.logo {
+  margin-top: 0px;
+  text-align: center;
+  width: 80px;
+}
+
+/* Новое меню */
+
+
+.top-menu {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.menu-main {
+  margin: 0px;
+  padding: 25px;
+  list-style: none;
+}
+
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 120px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Nekst-Medium';
+  color: black;
+}
+.menu-main a:hover {text-decoration: underline;}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+
+
+/* контент */
+/* img.new_1:hover {
+  background: url('sourse/img/1.png');  */
+  .new_1 { 
+    background: url('sourse/img/Astronautes_thumb1-mtime1567430048.png');  
+    background-size:cover ;
+    display: block;
+    width: 290px; 
+    height: 290px; 
+    }
+    
+    .new_1:hover { 
+    background: url('sourse/img/1.png'); 
+    background-size:cover ;
+    }
+
+
+
+/* .main {
+
+  min-height: 590px;
+  max-height: 100%;
+  margin-left: 150px;
+} */
+
+.content {
+  min-height: 590px;
+  flex: 1 0 auto;
+}
+
+.text_content {
+  min-height: 590px;
+  font-size: 14pt;
+  font-family: "Nekst-regular";
+}
+
+.table_text {
+  font-size: 14pt;
+  font-family: "Nekst-regular";
+}
+
+.text_content p {
+  margin-top: 0px;
+  text-indent: 55px;
+  text-align: justify;
+}
+
+.table_text p {
+  text-indent: 55px;
+  text-align: justify;
+}
+
+.text_content p a {
+  color: black;
+}
+
+.bblock {
+  padding: 0px;
+  float: left; /*Задаем обтекание*/
+  line-height: 35px; /*Высота строки +  верт. центрирования текста*/
+  font-size: 20pt;
+  font-family: Old Classic;
+  color: rgb(0, 0, 0);
+  width: 306px; /*Фиксируем ширину блока*/
+  margin-right: -17.9px;
+  text-align: center; /*Центрируем текст по горизонтали*/
+}
+.news :last-child {
+  margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+/* footer */
+
+footer {
+  background: #141838;
+  color: #dbdbdb;
+  font-size: 14px;
+  min-height: 90px;
+  max-height: 20%;
+}
+
+.footer_block {
+  vertical-align: bottom;
+  font-family: "Nekst-Thin";
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 40px;
+  margin-right: 120px;
+}
+
+.news :last-child {
+  margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+
+.footer_block a {
+  color: rgb(255, 255, 255);
+}
+/* таблица */
+table {
+  margin-top: -2%;
+  font-size: 18px;
+  font-family: "Nekst-Regular";
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 3px;
+  background: #c4f4fc;
+  color: #3b453b;
+  border: 4px solid #7ebfa1;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+}
+/* обр связь */
+#send_input {
+  border: 2px solid #5aa07a;
+  background: #ffffff;
+  color: #306136;
+  font-size: 18px;
+  font-family: Nekst-medium;
+}
+#send_input:focus {
+  outline: none;
+  font-family: Nekst-Regular;
+  background: #c4fcdb;
+}
+/* кнопки для изменения стиля таблицы */
+.inp {
+  margin-top: 1%;
+}
+
+.inp_font {
+  margin-top: -3%;
+}
+
+.inp_style {
+  border: 2px solid #5aa07a;
+  background: #ffffff;
+  width: 120px;
+  color: #306136;
+  font-size: 16px;
+  font-family: Nekst-medium;
+}
+
+.inp_style:focus {
+  outline: none;
+  border: 2px solid #4859a7;
+  background: #7779da;
+  color: #ffffff;
+}
+
+#input-id {
+  font-family: Nekst-Regular;
+}
+
+#input-id:focus {
+  outline: none;
+  font-family: Nekst-Regular;
+  background: #c4fcdb;
+}
