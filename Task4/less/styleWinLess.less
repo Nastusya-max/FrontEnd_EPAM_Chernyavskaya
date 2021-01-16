@@ -1,5 +1,5 @@
 // variable declaration
-@footer-color:  #141838;
+@footer-color: #141838;
 @black-color: rgb(0, 0, 0);
 
 footer {
@@ -7,24 +7,24 @@ footer {
 }
 
 @font-face {
-  font-family: 'Nekst-Medium';
-  src: url('sourse/fonts/Nekst-Medium.otf') format('otf');
+  font-family: "Nekst-Medium";
+  src: url("sourse/fonts/Nekst-Medium.otf") format("otf");
 }
 
 @font-face {
-  font-family: 'Nekst-Regular';
-  src: url('sourse/fonts/Nekst-Regular.otf') format('otf');
+  font-family: "Nekst-Regular";
+  src: url("sourse/fonts/Nekst-Regular.otf") format("otf");
 }
 
 @font-face {
-  font-family: 'Old Classic';
-  src: url('sourse/fonts/Old-Classic.ttf') format('ttf');
+  font-family: "Old Classic";
+  src: url("sourse/fonts/Old-Classic.ttf") format("ttf");
 }
 
 // variable declaration
-@header-nav-font: 'Nekst-Medium';
-@main-font: 'Nekst-Regular';
-@signature-font: 'Old Classic';
+@header-nav-font: "Nekst-Medium";
+@main-font: "Nekst-Regular";
+@signature-font: "Old Classic";
 
 header li p {
   font-family: @header-nav-font;
@@ -54,19 +54,19 @@ nav li {
   font-family: @main-font;
 }
 // mixin creation
-.signature-pic{
+.signature-pic {
   font-family: @signature-font;
   color: @black-color;
 }
 // mixin with multiple parameters
-.text_block(@width; @font-family; @font-size; @color){
+.text_block(@width; @font-family; @font-size; @color) {
   width: @width;
   font-family: @font-family;
   font-size: @font-size;
   color: @color;
 }
 // mixin without parameters
-.distance(@size: 5px){
+.distance(@size: 5px) {
   margin-right: @size;
 }
 // using mixin
@@ -78,6 +78,6 @@ nav li {
   .text_block(306px; @signature-font; 20pt; rgb(0, 0, 0));
 }
 // using mixin without parameters
-.bblock{
+.bblock {
   .distance();
 }

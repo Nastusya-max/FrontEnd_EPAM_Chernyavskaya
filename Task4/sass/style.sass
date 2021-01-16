@@ -1,0 +1,19 @@
+//variable declaration
+$white-color: #dbdbdb
+$size: 14px
+
+//mixin declaration
+@mixin text-footer
+    font-size: 14px    
+    color: $white-color
+.footer
+    @include text-footer
+
+//function declaration
+@function function-example()
+    @if '1 + 1 == 2'
+    @return 120px
+
+.footer_block
+    margin-right: function-example()
+

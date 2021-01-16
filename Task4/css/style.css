@@ -1,36 +1,21 @@
-/* @font-face { */
-  /* font-family: Nekst-Medium; Имя шрифта */
-  /* src: url(sourse/fonts/Nekst-Medium.otf); Путь к файлу со шрифтом */
-/* } */
-
 @font-face {
-  font-family: Nekst-Light; /* Имя шрифта */
-  src: url(sourse/fonts/Nekst-Light.otf); /* Путь к файлу со шрифтом */
+  font-family: Nekst-Light; 
+  src: url(sourse/fonts/Nekst-Light.otf); 
 }
 
 @font-face {
-  font-family: Nekst-Bold; /* Имя шрифта */
-  src: url(sourse/fonts/Nekst-Bold.otf); /* Путь к файлу со шрифтом */
+  font-family: Nekst-Bold; 
+  src: url(sourse/fonts/Nekst-Bold.otf);
 }
 
 @font-face {
-  font-family: Nekst-Thin; /* Имя шрифта */
-  src: url(sourse/fonts/Nekst-Thin.otf); /* Путь к файлу со шрифтом */
+  font-family: Nekst-Thin; 
+  src: url(sourse/fonts/Nekst-Thin.otf);
 }
 
-/* @font-face {
-  font-family: Nekst-Regular; /* Имя шрифта */
-  /* src: url(sourse/fonts/Nekst-Regular.otf); /* Путь к файлу со шрифтом */
-/* } */ 
-
-/* @font-face {
-  font-family: Old-Classic; /* Имя шрифта */
-  /* src: url(sourse/fonts/Old-Classic.ttf); Путь к файлу со шрифтом */
-/* } */
-
 @font-face {
-  font-family: Comic Sans MS; /* Имя шрифта */
-  src: url(sourse/fonts/comic.ttf); /* Путь к файлу со шрифтом */
+  font-family: Comic Sans MS;
+  src: url(sourse/fonts/comic.ttf);
 }
 
 #wrapper {
@@ -61,7 +46,6 @@ header li p {
   text-transform: uppercase;
   font-size: 12pt;
   text-align: left;
-  font-family: Nekst-Medium;
   margin-top: -10px;
 }
 
@@ -91,7 +75,6 @@ nav li {
   list-style-type: none;
   list-style-position: inside;
   font-size: 12pt;
-  font-family: Nekst-Medium;
   padding: 15px;
 }
 
@@ -113,19 +96,12 @@ main {
   flex: 1 0 auto;
 }
 
-blockquote {
-  margin: 0;
-  padding: 10px 20px;
-}
-
 .text_content {
   font-size: 14pt;
-  font-family: Nekst-Regular;
 }
 
 .table_text {
   font-size: 14pt;
-  font-family: Nekst-Regular;
 }
 
 .text_content p {
@@ -144,35 +120,25 @@ blockquote {
 }
 
 .bblock {
-  float: left; /*Задаем обтекание*/
-  line-height: 35px; /*Высота строки +  верт. центрирования текста*/
-  /* font-size: 20pt; */
-  /* font-family: Old Classic;
-  color: rgb(0, 0, 0); */
-  /* width: 306px; Фиксируем ширину блока */
-  /* margin-right: 5px; */
-  text-align: center; /*Центрируем текст по горизонтали*/
+  float: left;
+  line-height: 35px; 
+  text-align: center;
 }
 .wrap :last-child {
-  margin-right: 0px; /*Убираем поле последнего div-а*/
+  margin-right: 0px;
 }
 /* footer */
 
 footer {
-  /* background: #141838; */
-  color: #dbdbdb;
-  font-size: 14px;
   min-height: 90px;
   max-height: 50%;
 }
 
 .footer_block {
   vertical-align: bottom;
-  /* font-family: Nekst-Thin; */
-  display: inline-block;  
+  display: inline-block;
   margin-left: 10%;
   margin-top: 40px;
-  margin-right: 120px;
 }
 
 .wrap :last-child {
@@ -186,7 +152,6 @@ footer {
 table {
   margin-top: -2%;
   font-size: 18px;
-  font-family: Nekst-Regular;
   text-align: left;
   border-collapse: separate;
   border-spacing: 3px;
@@ -206,11 +171,9 @@ td {
   background: #ffffff;
   color: #306136;
   font-size: 18px;
-  font-family: Nekst-Medium;
 }
 #send_input:focus {
   outline: none;
-  font-family: Nekst-Regular;
   background: #c4fcdb;
 }
 /* кнопки для изменения стиля таблицы */
@@ -228,7 +191,6 @@ td {
   width: 120px;
   color: #306136;
   font-size: 16px;
-  font-family: Nekst-Medium;
 }
 
 .inp_style:focus {
@@ -238,12 +200,7 @@ td {
   color: #ffffff;
 }
 
-#input-id {
-  font-family: Nekst-Regular;
-}
-
 #input-id:focus {
   outline: none;
-  font-family: Nekst-Regular;
   background: #c4fcdb;
 }
