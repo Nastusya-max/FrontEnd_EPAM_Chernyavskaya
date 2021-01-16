@@ -1,7 +1,7 @@
-@font-face {
-  font-family: Nekst-Medium; /* Имя шрифта */
-  src: url(sourse/fonts/Nekst-Medium.otf); /* Путь к файлу со шрифтом */
-}
+/* @font-face { */
+  /* font-family: Nekst-Medium; Имя шрифта */
+  /* src: url(sourse/fonts/Nekst-Medium.otf); Путь к файлу со шрифтом */
+/* } */
 
 @font-face {
   font-family: Nekst-Light; /* Имя шрифта */
@@ -18,15 +18,15 @@
   src: url(sourse/fonts/Nekst-Thin.otf); /* Путь к файлу со шрифтом */
 }
 
-@font-face {
+/* @font-face {
   font-family: Nekst-Regular; /* Имя шрифта */
-  src: url(sourse/fonts/Nekst-Regular.otf); /* Путь к файлу со шрифтом */
-}
+  /* src: url(sourse/fonts/Nekst-Regular.otf); /* Путь к файлу со шрифтом */
+/* } */ 
 
-@font-face {
+/* @font-face {
   font-family: Old-Classic; /* Имя шрифта */
-  src: url(sourse/fonts/Old-Classic.ttf); /* Путь к файлу со шрифтом */
-}
+  /* src: url(sourse/fonts/Old-Classic.ttf); Путь к файлу со шрифтом */
+/* } */
 
 @font-face {
   font-family: Comic Sans MS; /* Имя шрифта */
@@ -90,7 +90,8 @@ nav ul {
 nav li {
   list-style-type: none;
   list-style-position: inside;
-  font: 12pt Nekst-Medium;
+  font-size: 12pt;
+  font-family: Nekst-Medium;
   padding: 15px;
 }
 
@@ -119,12 +120,12 @@ blockquote {
 
 .text_content {
   font-size: 14pt;
-  font-family: Nekst-regular;
+  font-family: Nekst-Regular;
 }
 
 .table_text {
   font-size: 14pt;
-  font-family: Nekst-regular;
+  font-family: Nekst-Regular;
 }
 
 .text_content p {
@@ -145,11 +146,11 @@ blockquote {
 .bblock {
   float: left; /*Задаем обтекание*/
   line-height: 35px; /*Высота строки +  верт. центрирования текста*/
-  font-size: 20pt;
-  font-family: Old Classic;
-  color: rgb(0, 0, 0);
-  width: 306px; /*Фиксируем ширину блока*/
-  margin-right: 5px;
+  /* font-size: 20pt; */
+  /* font-family: Old Classic;
+  color: rgb(0, 0, 0); */
+  /* width: 306px; Фиксируем ширину блока */
+  /* margin-right: 5px; */
   text-align: center; /*Центрируем текст по горизонтали*/
 }
 .wrap :last-child {
@@ -158,7 +159,7 @@ blockquote {
 /* footer */
 
 footer {
-  background: #141838;
+  /* background: #141838; */
   color: #dbdbdb;
   font-size: 14px;
   min-height: 90px;
@@ -167,7 +168,7 @@ footer {
 
 .footer_block {
   vertical-align: bottom;
-  font-family: "Nekst-Thin";
+  /* font-family: Nekst-Thin; */
   display: inline-block;  
   margin-left: 10%;
   margin-top: 40px;
@@ -185,7 +186,7 @@ footer {
 table {
   margin-top: -2%;
   font-size: 18px;
-  font-family: "Nekst-Regular";
+  font-family: Nekst-Regular;
   text-align: left;
   border-collapse: separate;
   border-spacing: 3px;
@@ -205,7 +206,7 @@ td {
   background: #ffffff;
   color: #306136;
   font-size: 18px;
-  font-family: Nekst-medium;
+  font-family: Nekst-Medium;
 }
 #send_input:focus {
   outline: none;
@@ -227,7 +228,7 @@ td {
   width: 120px;
   color: #306136;
   font-size: 16px;
-  font-family: Nekst-medium;
+  font-family: Nekst-Medium;
 }
 
 .inp_style:focus {

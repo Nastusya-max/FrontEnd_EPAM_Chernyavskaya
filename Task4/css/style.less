@@ -1,0 +1,21 @@
+@color: #208531;
+// shielding
+@path: ~'sourse/fonts/Nekst-Thin.otf';
+
+.bblock {
+    // applying overlay function
+    color: desaturate(spin(@color, 18), 12%);
+    // rounding function application
+    line-height: round(34.86px);
+}
+// use of shielding
+@font-face {
+    font-family: 'Nekst-Thin';
+    src: url(@path) format('otf');
+}
+
+@footer-font: 'Nekst-Thin';
+
+.footer_block {
+    font-family: @footer-font;
+}
