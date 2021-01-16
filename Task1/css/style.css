@@ -59,7 +59,7 @@ nav li a {
 }
 
 /* контент */
-aside {
+main {
   float: inline-start;
   height: 590px;
   margin-top: -300px;
