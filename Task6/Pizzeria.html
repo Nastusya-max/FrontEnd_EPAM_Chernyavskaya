@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task06</title>
+    <!-- connecting required files -->
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+
+    <script src="js/Dough.js"></script>
+    <script src="js/Toppings.js"></script>
+    <script src="js/Souses.js"></script>
+    <!-- in the file there is a function for adding a pizza object and outputting data alert() -->
+    <script src="js/Order.js"></script>
+    <script src="js/Pizza.js"></script>
+    <script src="js/Output.js"></script>
+    <!-- <script src="js/Server.js"></script> -->
+
+</head>
+
+<body>
+    <a>please, choose a pizza base :</a>
+    <br>
+    <br>
+    <!-- creation of a radioelement to select a dough-->
+    <div class="radio">
+        <input type="radio" name="nameRadio" id="thin">
+        <label for="thin">Thin</label>
+        <input type="radio" name="nameRadio" id="thick">
+        <label for="thick">Thick</label>
+        <input type="radio" name="nameRadio" id="puff">
+        <label for="puff">Puff</label>
+        <input type="radio" name="nameRadio" id="italian">
+        <label for="italian">Italian</label>
+        <input type="radio" name="nameRadio" id="calzone">
+        <label for="calzone">Calzone</label>
+    </div>
+    <br>
+    <br>
+    <a>please, choose a pizza toppings :</a>
+    <br>
+    <br>
+    <!-- creation of a checkbox to select a toppings -->
+    <div class="checkbox">
+        <input id="mozzarella" type="checkbox" name="check">
+        <label for="mozzarella">Mozzarella</label>
+
+        <input id="parmesan" type="checkbox" name="check">
+        <label for="parmesan">Parmesan</label>
+
+        <input id="peperoni" type="checkbox" name="check">
+        <label for="peperoni">Peperoni</label>
+
+        <input id="ham" type="checkbox" name="check">
+        <label for="ham">Ham</label>
+
+        <input id="chicken" type="checkbox" name="check">
+        <label for="chicken">Chicken</label>
+
+        <input id="bacon" type="checkbox" name="check">
+        <label for="bacon">Bacon</label>
+
+        <input id="champignon" type="checkbox" name="check">
+        <label for="champignon">Champignon</label>
+
+        <input id="tomatoes" type="checkbox" name="check">
+        <label for="tomatoes">Tomatoes</label>
+
+        <input id="pineapple" type="checkbox" name="check">
+        <label for="pineapple">Pineapple</label>
+
+        <input id="onion" type="checkbox" name="check">
+        <label for="onion">Onion</label>
+
+        <input id="seafood" type="checkbox" name="check">
+        <label for="seafood">Seafood</label>
+
+        <input id="pepper" type="checkbox" name="check">
+        <label for="pepper">Pepper</label>
+    </div>
+    <br>
+    <br>
+    <a>please, choose a pizza souses :</a>
+    <br>
+    <br>
+    <!-- creation of a checkbox to select a souses-->
+    <div class="checkbox">
+        <input id="ketchup" type="checkbox" name="check">
+        <label for="ketchup">Ketchup</label>
+
+        <input id="bbq" type="checkbox" name="check">
+        <label for="bbq">BBQ</label>
+
+        <input id="cheeseSauce" type="checkbox" name="check">
+        <label for="cheeseSauce">Cheese Sauce</label>
+
+        <input id="mushroomSauce" type="checkbox" name="check">
+        <label for="mushroomSauce">Mushroom Sauce</label>
+
+        <input id="sweetAndSourSauce" type="checkbox" name="check">
+        <label for="sweetAndSourSauce">Sweet & Sour Sauce</label>
+
+        <input id="oysterSauce" type="checkbox" name="check">
+        <label for="oysterSauce">Oyster Sauce</label>
+    </div>
+    <br>
+    <br>
+    <!-- pizza price display -->
+    Price :
+    <output id="coastTotal"></output>
+    <br>
+    <br>
+    <!-- displaying the price of pizza with tax included -->
+    Total price :
+    <output id="coastFinaly"></output>
+    <br>
+    <br>
+    <!-- pizza calorie output -->
+    Calories :
+    <output id="coastCalories"></output>
+    <br>
+    <br>
+    <!-- button for adding a new pizza to the array and displaying data -->
+    <input type="button" id="order" href="#" value="To order">
+</body>
+
+</html>
