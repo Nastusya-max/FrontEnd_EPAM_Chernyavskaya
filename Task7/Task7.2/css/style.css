@@ -1,0 +1,14 @@
+.basket {
+    width: 203px;
+    height: 437px;
+    background: url(/resources/clouseBascket.png) no-repeat;
+    margin-left: 50px;
+}
+
+.openBasket {
+    background: url(/resources/openBascket.png) no-repeat;
+}
+
+.draggable {
+    position:absolute;
+}

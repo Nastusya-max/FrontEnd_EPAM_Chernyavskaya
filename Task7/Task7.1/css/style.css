@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: #F5F5DC;
+}
+
+canvas {
+    width : 800;
+    height : 570;
+    border: 4px dashed rgb(255, 127, 80);
+}
+
+button {
+    
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(255, 127, 80);
+    box-shadow: 0 -3px rgb(204, 109, 46) inset;
+    transition: 0.2s;
+}

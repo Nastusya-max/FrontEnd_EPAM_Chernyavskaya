@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Connection of css file and script -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/Animation.js"></script>
+
+    <script>
+
+        DragManager.onDragEnd = function (dragObject, dropElem) {
+            // successful transfer, show 'openBascket'
+            dropElem.classList.add('openBasket');
+            // function performed through 0.2s
+            setTimeout(function () {
+                // removing the selected property from the element
+                dropElem.classList.remove('openBasket');
+                // temporary deletion of the transferred item
+                dragObject.elem.style.display = 'none';
+            }, 200);
+        };
+    </script>
+
+    <title>Animation</title>
+</head>
+
+<body>
+<!-- block with basket -->
+    <div class="basket droppable" id="basket">
+    </div>
+<!-- draggable objects -->
+    <img src="resources/bag.png" class="draggable" style="left:800px;top:100px">
+    <img src="resources/bank.png" class="draggable" style="left:600px;top:200px">
+    <img src="resources/botle.png" class="draggable" style="left:500px;top:300px">
+    <img src="resources/botle2.png" class="draggable" style="left:900px;top:350px">
+    <img src="resources/box.png" class="draggable" style="left:800px;top:380px">
+    <img src="resources/canned.png" class="draggable" style="left:750px;top:270px">
+    <img src="resources/cup.png" class="draggable" style="left:620px;top:330px">
+    <img src="resources/paper.png" class="draggable" style="left:500px;top:400px">
+
+</body>
+
+</html>
