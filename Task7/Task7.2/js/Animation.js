@@ -59,18 +59,13 @@ var DragManager = new function() {
         // display moving object on every mouse movement
         dragObject.avatar.style.left = e.pageX - dragObject.shiftX + 'px';
         dragObject.avatar.style.top = e.pageY - dragObject.shiftY + 'px';
-
-        let i;
+        // opening the basket when crossing the following coordinates
         if((e.pageX <= 240 && e.pageX >= 50) && e.pageY <= 460){
-            i = 1;
             basket.classList.add('openBasket');
         }
         else{
-            i = 0;
             basket.classList.remove('openBasket');;
         }
-
-        console.log(i);
 
         return false;
     }
