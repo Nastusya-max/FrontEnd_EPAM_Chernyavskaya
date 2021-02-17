@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- mod include required files -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Get request ajax -->
+    <script src="js/Get.js"></script>
+    <script src="js/Post.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- output JSON-events -->
+    <div class="first-third section">
+        <div id="event1" class="event" style="background-color:red"></div>
+        <input class="checkbox" type="checkbox" id="checkEvent1" style="opacity:0" onchange="ProgressIndicator()">
+        <br>
+        <div id="event2" class="event" style="background-color:red"></div>
+        <input class="checkbox" type="checkbox" id="checkEvent2" style="opacity:0" onchange="ProgressIndicator()">
+        <br>
+        <div id="event3" class="event" style="background-color:red"></div>
+        <input class="checkbox" type="checkbox" id="checkEvent3" style="opacity:0" onchange="ProgressIndicator()">
+    </div>
+    <br>
+    <!-- area for changing event data -->
+    <div>
+        <form name="Event1">
+            <label>First event</label>
+            <br>
+            <input type="text" name="dateEvent1" placeholder="date" />
+            <br>
+            <input type="text" name="timeEvent1" placeholder="time" />
+            <br>
+            <input type="text" name="nameEvent1" placeholder="name" />
+            <br>
+            <input type="text" name="priorityEvent1" placeholder="priority" />
+            <br>
+            <input type="text" name="noteEvent1" placeholder="note" />
+            <br>
+            <input type="submit" value="Send" onsubmit="ChangeEvent1()" />
+        </form>
+        <br>
+        <form name="Event2">
+            <label>Second event</label>
+            <br>
+            <input type="text" name="dateEvent2" placeholder="date" />
+            <br>
+            <input type="text" name="timeEvent2" placeholder="time" />
+            <br>
+            <input type="text" name="nameEvent2" placeholder="name" />
+            <br>
+            <input type="text" name="priorityEvent2" placeholder="priority" />
+            <br>
+            <input type="text" name="noteEvent2" placeholder="note" />
+            <br>
+            <input type="submit" value="Send" onsubmit="ChangeEvent2()" />
+        </form>
+        <br>
+        <form name="Event3">
+            <label>Third event</label>
+            <br>
+            <input type="text" name="dateEvent3" placeholder="date" />
+            <br>
+            <input type="text" name="timeEvent3" placeholder="time" />
+            <br>
+            <input type="text" name="nameEvent3" placeholder="name" />
+            <br>
+            <input type="text" name="priorityEvent3" placeholder="priority" />
+            <br>
+            <input type="text" name="noteEvent3" placeholder="note" />
+            <br>
+            <input type="submit" value="Send" onsubmit="ChangeEvent3()" />
+        </form>
+    </div>
+
+</body>
+
+</html>
