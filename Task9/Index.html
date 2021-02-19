@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <!-- connecting bootstrap-styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Students</h1>
+    <div class="conteiner">
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <!-- form for adding a new student -->
+                <h3>Add new student</h3>
+                <form class="add-student-form">
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="text" class="form-control" id="id-value">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Fist Name</label>
+                        <input type="text" class="form-control" id="firstName-value">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Second Name</label>
+                        <input type="text" class="form-control" id="secondName-value">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="text" class="form-control" id="age-value">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Speciality</label>
+                        <input type="text" class="form-control" id="speciality-value">
+                    </div>
+                    <button class="btn btn-primary">Add student</button>
+                </form>
+            </div>
+        </div>
+        <!-- card of students -->
+        <div class="student-list row">
+        </div>
+    </div>
+    <!-- connecting scripts -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

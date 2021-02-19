@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "James",
+      "secondName": "Jones",
+      "age": 20,
+      "speciality": "Engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "Marry",
+      "secondName": "Brown",
+      "age": 18,
+      "speciality": "Programmer"
+    },
+    {
+      "id": "3",
+      "firstName": "Emily",
+      "secondName": "Williams",
+      "age": "19",
+      "speciality": "Marketer"
+    }
+  ]
+}
